@@ -18,7 +18,7 @@
     "format:check": "npm run format:emit -- --list-different",
     "format": "npm run format:emit -- --write",
     "check": "run-p format:check lint types test:check",
-    "prepublish": "npm run build -s"
+    "prepare": "npm run build -s"
   },
   "repository": {
     "type": "git",
