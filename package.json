@@ -1,0 +1,63 @@
+{
+  "name": "loldash",
+  "version": "9001.0.0",
+  "description": "very serious javascripts",
+  "main": "dist/loldash.umd.js",
+  "module": "dist/loldash.esm.js",
+  "files": ["dist/**/*"],
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "NODE_ENV=production rollup -c && NODE_ENV=development rollup -c",
+    "test": "jest --watch",
+    "test:check": "jest --ci --silent",
+    "lint": "tslint --project ./ --fix",
+    "types": "tsc --noEmit",
+    "types:gen": "tsc",
+    "format:emit":
+      "prettier package.json .prettierrc rollup.config.js tsconfig.json tslint.json README.md \"./src/**/*.{ts,js,json}\"",
+    "format:check": "npm run format:emit -- --list-different",
+    "format": "npm run format:emit -- --write",
+    "check": "run-p format:check lint types test:check",
+    "prepublish": "npm run build -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btholt/loldash.git"
+  },
+  "keywords": ["serious", "javascripts", "important", "array"],
+  "author": "Brian Holt <btholt+loldash@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/btholt/loldash/issues"
+  },
+  "homepage": "http://www.loldash.com",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run check"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.0",
+    "husky": "^0.14.3",
+    "jest": "^22.4.2",
+    "npm-run-all": "^4.1.2",
+    "prettier": "^1.11.1",
+    "rollup": "^0.56.5",
+    "rollup-plugin-commonjs": "^9.0.0",
+    "rollup-plugin-node-resolve": "^3.2.0",
+    "rollup-plugin-typescript2": "^0.12.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "ts-jest": "^22.4.1",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.9.0",
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {},
+  "jest": {
+    "moduleFileExtensions": ["ts", "tsx", "js"],
+    "transform": {
+      "^.+\\.ts$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": ["**/__tests__/*.+(ts|js)"]
+  }
+}
