@@ -34,6 +34,8 @@ install();
 
 `Array.prototype.mushyface` - randomly adds and subtracts numbers from each number in the array without changing the average number of the array and returns itself
 
+`Array.prototype.nop` - no operation, just do nothing and returns itself
+
 `Array.prototype.pancake` - sugar for calling `smoosh` and `fry`
 
 `Array.prototype.rad` - overwrites all the values in the array to be a pretty rad string of hearts, returns itself
