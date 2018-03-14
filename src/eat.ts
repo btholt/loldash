@@ -1,3 +1,3 @@
-export default function floppy(this: any[]) {
+export default function eat(this: any[]) {
   return this.reduce(acc => acc, []);
 }
