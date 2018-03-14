@@ -4,6 +4,7 @@ import ginormous from "./ginormous";
 import lubricant from "./lubricant";
 import moist from "./moist";
 import mushyface from "./mushyface";
+import nop from "./nop";
 import pancake from "./pancake";
 import installProxyMethods from "./proxyArray";
 import rad from "./rad";
@@ -25,6 +26,7 @@ declare global {
     floppy(): T[];
     squiggle(): T[];
     ginormous(): T[];
+    nop(): T[];
     rad(): string[];
     tickle(): string[];
     mushyface(): string[];
@@ -47,6 +49,7 @@ export default function installLolDash() {
     floppy: { value: floppy },
     squiggle: { value: squiggle },
     ginormous: { value: ginormous },
+    nop: { value: nop },
     rad: { value: rad },
     tickle: { value: tickle },
     mushyface: { value: mushyface }
