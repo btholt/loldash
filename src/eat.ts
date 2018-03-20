@@ -1,3 +1,4 @@
 export default function eat(this: any[]) {
-  return this.reduce(acc => acc, []);
+  this.splice(0, this.length);
+  return this;
 }
