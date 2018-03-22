@@ -1,3 +1,4 @@
+import eat from "./eat";
 import floppy from "./floppy";
 import fry from "./fry";
 import ginormous from "./ginormous";
@@ -16,6 +17,7 @@ import tickle from "./tickle";
 
 declare global {
   interface Array<T> {
+    eat(): T[];
     fry(): number[];
     squirt(): T[];
     lubricant(length: number): T[];
@@ -39,6 +41,7 @@ declare global {
 
 export default function installLolDash() {
   Object.defineProperties(Array.prototype, {
+    eat: { value: eat },
     fry: { value: fry },
     squirt: { value: squirt },
     lubricant: { value: lubricant },

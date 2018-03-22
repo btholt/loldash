@@ -22,6 +22,8 @@ install();
 
 ## docs
 
+`Array.prototype.eat` - returns an empty array
+
 `Array.prototype.floppy` - removes the last three items of the array and returns the removed items
 
 `Array.prototype.fry` - adds 325 to every item in the array and returns itself
