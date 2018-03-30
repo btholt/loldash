@@ -1,6 +1,6 @@
 {
   "name": "loldash",
-  "version": "9001.0.0",
+  "version": "9002.0.0",
   "description": "very serious javascripts",
   "main": "dist/loldash.umd.js",
   "module": "dist/loldash.esm.js",
@@ -58,6 +58,7 @@
     "transform": {
       "^.+\\.ts$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
-    "testMatch": ["**/__tests__/*.+(ts|js)"]
+    "testMatch": ["**/__tests__/*.+(ts|js)"],
+    "testPathIgnorePatterns": ["/dist/"]
   }
 }
