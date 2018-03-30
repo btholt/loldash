@@ -36,7 +36,7 @@ install();
 
 `Array.prototype.mushyface` - randomly adds and subtracts numbers from each number in the array without changing the average number of the array and returns itself
 
-`Array.prototype.nop` - no operation, just do nothing and returns itself
+`Array.prototype.nope` - no operation, just do nothing and returns itself
 
 `Array.prototype.pancake` - sugar for calling `smoosh` and `fry`
 
@@ -44,7 +44,9 @@ install();
 
 `Array.prototype.scrunch` - cuts the size in half and combines values of items next to each other and returns itself
 
-`Array.prototype.smoosh` - lol
+`Array.prototype.smooosh` - recursively smooshes an array of arrays into one smooshed (or flattened) array, returns itself
+
+`Array.prototype.smoosh` - smooshes an array of arrays into one smooshed (or flattened) array, returns itself
 
 `Array.prototype.squiggle` - shuffles the array and returns itself
 
