@@ -2,8 +2,6 @@
 
 very serious javascripts
 
-play with it here: [www.loldash.com](http://www.loldash.com/)
-
 ## wait what?
 
 [See here](https://twitter.com/sarah_edo/status/971761942556762112).
